@@ -1,12 +1,18 @@
 import "./App.css";
-import { Button } from "@/components/ui/button";
+import { Navbar } from "./components/custom/nabvar/Navbar.component";
+import { headerData } from "./data/header.data";
 
 function App() {
+  const { logoImage, navbarItems, loginBtnText, loginButtonLink } = headerData;
   return (
-    <>
-      <h1 class="text-3xl font-bold underline">Hello world!</h1>
-      <Button className={""}>Click me</Button>
-    </>
+    <section className="">
+      <Navbar
+        logoImage={logoImage}
+        navbarItems={navbarItems}
+        buttonText={loginBtnText}
+        buttonLink={loginButtonLink}
+      />
+    </section>
   );
 }
 
