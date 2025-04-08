@@ -1,0 +1,55 @@
+export const tweetLoveData = {
+  subheading: "Love that we get from our community",
+  heading: "Tweet Love",
+  tweets: [
+    {
+      id: 1,
+      username: "john_doe",
+      name: "John Doe",
+      profileImage: "https://pbs.twimg.com/profile_images/xyz.jpg",
+      handle: "@john_doe",
+      tweetText:
+        "This course was amazing! Loved the peer code reviews and community 💯",
+      tweetDate: "2024-12-10T15:30:00Z",
+      tweetUrl: "https://twitter.com/john_doe/status/1234567890",
+      likes: 120,
+      retweets: 30,
+      comments: 10,
+      verified: true,
+    },
+    {
+      id: 1,
+      username: "john_doe",
+      name: "John Doe",
+      profileImage: "https://pbs.twimg.com/profile_images/xyz.jpg",
+      handle: "@john_doe",
+      tweetText:
+        "This course was amazing! Loved the peer code reviews and community 💯",
+      tweetDate: "2024-12-10T15:30:00Z",
+      tweetUrl: "https://twitter.com/john_doe/status/1234567890",
+      likes: 120,
+      retweets: 30,
+      comments: 10,
+      verified: true,
+    },
+    {
+      id: 1,
+      username: "john_doe",
+      name: "John Doe",
+      profileImage: "https://pbs.twimg.com/profile_images/xyz.jpg",
+      handle: "@john_doe",
+      tweetText:
+        "This course was amazing! Loved the peer code reviews and community 💯",
+      tweetDate: "2024-12-10T15:30:00Z",
+      tweetUrl: "https://twitter.com/john_doe/status/1234567890",
+      likes: 120,
+      retweets: 30,
+      comments: 10,
+      verified: true,
+    },
+  ],
+  cta: {
+    text: "Join Cohorts Live Classes",
+    link: "/cohorts",
+  },
+};
