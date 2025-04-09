@@ -1,5 +1,5 @@
 export const headerData = {
-  logoImage: "/chaicode-black.png",
+  logoImage: "/chaicode-white.png",
   navbarItems: [
     {
       title: "cohorts",

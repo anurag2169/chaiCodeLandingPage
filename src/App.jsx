@@ -1,4 +1,5 @@
 import "./App.css";
+import { HeroSection } from "./components/custom/heroSection/heroSection";
 import { Navbar } from "./components/custom/nabvar/Navbar.component";
 import { headerData } from "./data/header.data";
 
@@ -12,6 +13,7 @@ function App() {
         buttonText={loginBtnText}
         buttonLink={loginButtonLink}
       />
+      <HeroSection />
     </section>
   );
 }

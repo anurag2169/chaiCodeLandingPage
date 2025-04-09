@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { EllipsisIcon, HammerIcon, Menu } from "lucide-react";
 import React from "react";
 
 export const Navbar = ({
@@ -8,21 +9,25 @@ export const Navbar = ({
   buttonLink,
 }) => {
   return (
-    <header className="w-full flex justify-between items-center gap-2 md:gap-5 py-4 px-5 md:px-10 shadow">
+    <header className="z-50 w-full flex justify-between items-center gap-2 md:gap-5 py-4 px-5 md:px-10 shadow">
       <div className="w-28 md:w-42">
         <a href="/">
-          <img src={logoImage} alt="Chaicode logo" className="w-full" />
+          <img src={logoImage} alt="Chaicode" className="w-full" />
         </a>
       </div>
-      <nav className="md:w-[40%]">
-        <ul className="flex justify-between gap-5">
+      <nav className="md:w-[30%]">
+        <div className="sm:hidden">
+          <Menu />
+        </div>
+
+        <ul className="hidden sm:flex justify-between gap-5">
           {navbarItems.map((item, index) => (
             <li key={index}>
               <a
                 href={item.link}
                 target={item.target}
                 rel="noopener noreferrer"
-                className="flex items-center hover:underline cursor-pointer text-md font-bold tracking-wider"
+                className="flex items-center hover:underline cursor-pointer text-md font-semibold tracking-wider"
               >
                 {item.title.charAt(0).toUpperCase() + item.title.slice(1)}
                 {item.LiveBlinker && (
@@ -39,7 +44,12 @@ export const Navbar = ({
         </ul>
       </nav>
       <div className="hidden md:block ">
-        <Button variant="" size="lg" asChild className="w-36">
+        <Button
+          variant="secondary"
+          size="lg"
+          asChild
+          className="w-36 transition-transform duration-300 hover:scale-105"
+        >
           <a target="_blank" rel="noopener noreferrer" href={buttonLink}>
             {buttonText}
           </a>
