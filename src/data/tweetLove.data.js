@@ -3,13 +3,12 @@ export const tweetLoveData = {
   heading: "Tweet Love",
   tweets: [
     {
-      id: 1,
       username: "john_doe",
       name: "John Doe",
-      profileImage: "https://pbs.twimg.com/profile_images/xyz.jpg",
+      profileImage: "https://picsum.photos/id/237/200/300",
       handle: "@john_doe",
       tweetText:
-        "This course was amazing! Loved the peer code reviews and community 💯",
+        "This course was absolutely amazing! I genuinely enjoyed every part of the learning experience, but what truly stood out to me were the peer code reviews and the incredible sense of community.",
       tweetDate: "2024-12-10T15:30:00Z",
       tweetUrl: "https://twitter.com/john_doe/status/1234567890",
       likes: 120,
@@ -18,13 +17,12 @@ export const tweetLoveData = {
       verified: true,
     },
     {
-      id: 1,
       username: "john_doe",
       name: "John Doe",
-      profileImage: "https://pbs.twimg.com/profile_images/xyz.jpg",
+      profileImage: "https://picsum.photos/seed/picsum/200/300",
       handle: "@john_doe",
       tweetText:
-        "This course was amazing! Loved the peer code reviews and community 💯",
+        "Absolutely loved this course! The peer code reviews and the awesome community made it even better 💯",
       tweetDate: "2024-12-10T15:30:00Z",
       tweetUrl: "https://twitter.com/john_doe/status/1234567890",
       likes: 120,
@@ -33,10 +31,9 @@ export const tweetLoveData = {
       verified: true,
     },
     {
-      id: 1,
       username: "john_doe",
       name: "John Doe",
-      profileImage: "https://pbs.twimg.com/profile_images/xyz.jpg",
+      profileImage: "/chai-white.png",
       handle: "@john_doe",
       tweetText:
         "This course was amazing! Loved the peer code reviews and community 💯",
@@ -51,5 +48,6 @@ export const tweetLoveData = {
   cta: {
     text: "Join Cohorts Live Classes",
     link: "/cohorts",
+    target: "_blank",
   },
 };
