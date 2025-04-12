@@ -1,8 +1,11 @@
 import "./App.css";
+import { Divider } from "./components/custom/divider/Divider";
 import { HeroSection } from "./components/custom/heroSection/heroSection";
+import { LiveCohort } from "./components/custom/liveCohort/LiveCohort";
 import { Navbar } from "./components/custom/nabvar/Navbar.component";
 import { Showcase } from "./components/custom/showcaseSection/showcase";
 import { TweetLove } from "./components/custom/tweetLove/TweetLove";
+import { cohortsData } from "./data/cohorts.data";
 import { headerData } from "./data/header.data";
 import { studentShowcaseData } from "./data/studentShowcase.data";
 import { tweetLoveData } from "./data/tweetLove.data";
@@ -27,6 +30,12 @@ function App() {
         cta={cta}
       />
       <Showcase title={title} logos={logos} />
+      <Divider />
+      <LiveCohort
+        heading={cohortsData.sectionTitle}
+        subHeading={cohortsData.sectionSubtitle}
+        liveCohorts={cohortsData.cohorts}
+      />
     </section>
   );
 }

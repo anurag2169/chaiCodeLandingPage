@@ -1,12 +1,13 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --animate-scroll: scroll var(--animation-duration, 25s) var(--animation-direction, forwards) linear infinite;
- 
+  --animate-scroll: scroll var(--animation-duration, 25s)
+    var(--animation-direction, forwards) linear infinite;
+  --animate-grow-center: grow-center 1.5s ease-out forwards;
+
   @keyframes scroll {
     0% {
       transform: translateX(0);
@@ -132,5 +133,3 @@
     @apply bg-background text-foreground;
   }
 }
-
-

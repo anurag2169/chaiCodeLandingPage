@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useMemo } from "react";
 
 export const Showcase = ({ title, logos }) => {
-  const duplicatedLogos = [...logos, ...logos];
+  const duplicatedLogos = useMemo(() => [...logos, ...logos], [logos]);
 
   return (
     <div className="flex flex-col gap-10 md:gap-20 justify-center items-center py-8 md:py-12">
@@ -18,6 +18,7 @@ export const Showcase = ({ title, logos }) => {
               <img
                 src={logo.img}
                 alt={logo.name}
+                 loading="lazy"
                 className="w-full h-full object-contain"
               />
             </li>
