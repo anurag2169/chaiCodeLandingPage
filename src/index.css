@@ -5,6 +5,19 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --animate-scroll: scroll var(--animation-duration, 25s) var(--animation-direction, forwards) linear infinite;
+ 
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-50%));
+    }
+  }
+}
+
+@theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);

@@ -1,13 +1,16 @@
 import "./App.css";
 import { HeroSection } from "./components/custom/heroSection/heroSection";
 import { Navbar } from "./components/custom/nabvar/Navbar.component";
+import { Showcase } from "./components/custom/showcaseSection/showcase";
 import { TweetLove } from "./components/custom/tweetLove/TweetLove";
 import { headerData } from "./data/header.data";
+import { studentShowcaseData } from "./data/studentShowcase.data";
 import { tweetLoveData } from "./data/tweetLove.data";
 
 function App() {
   const { logoImage, navbarItems, loginBtnText, loginButtonLink } = headerData;
   const { heading, subheading, tweets, cta } = tweetLoveData;
+  const { title, logos } = studentShowcaseData;
   return (
     <section className="">
       <Navbar
@@ -23,6 +26,7 @@ function App() {
         tweets={tweets}
         cta={cta}
       />
+      <Showcase title={title} logos={logos} />
     </section>
   );
 }
