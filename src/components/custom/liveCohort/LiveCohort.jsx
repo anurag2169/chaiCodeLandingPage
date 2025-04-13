@@ -5,8 +5,8 @@ export const LiveCohort = ({ heading, subHeading, liveCohorts }) => {
   return (
     <section className="w-full flex flex-col items-center justify-center gap-10">
       <div className="text-center">
-        <h2 className="text-5xl font-bold ">
-          <span className="bg-gradient-to-r from-orange-300 to-amber-500 text-transparent bg-clip-text">
+        <h2 className="text-3xl md:text-5xl font-bold ">
+          <span className="bg-gradient-to-r from-orange-300 to-amber-600 text-transparent bg-clip-text">
             {heading}
           </span>
         </h2>

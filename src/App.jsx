@@ -4,10 +4,12 @@ import { HeroSection } from "./components/custom/heroSection/heroSection";
 import { LiveCohort } from "./components/custom/liveCohort/LiveCohort";
 import { Navbar } from "./components/custom/nabvar/Navbar.component";
 import { Showcase } from "./components/custom/showcaseSection/showcase";
+import { Testimonials } from "./components/custom/testimonials/Testimonials";
 import { TweetLove } from "./components/custom/tweetLove/TweetLove";
 import { cohortsData } from "./data/cohorts.data";
 import { headerData } from "./data/header.data";
 import { studentShowcaseData } from "./data/studentShowcase.data";
+import { testimonials } from "./data/testimonials.data";
 import { tweetLoveData } from "./data/tweetLove.data";
 
 function App() {
@@ -36,6 +38,8 @@ function App() {
         subHeading={cohortsData.sectionSubtitle}
         liveCohorts={cohortsData.cohorts}
       />
+      <Divider />
+      <Testimonials testimonials={testimonials} />
     </section>
   );
 }
