@@ -1,4 +1,5 @@
 import "./App.css";
+import { CoursesSection } from "./components/custom/coursesSection/CoursesSection";
 import { Divider } from "./components/custom/divider/Divider";
 import { HeroSection } from "./components/custom/heroSection/heroSection";
 import { LiveCohort } from "./components/custom/liveCohort/LiveCohort";
@@ -11,6 +12,7 @@ import { headerData } from "./data/header.data";
 import { studentShowcaseData } from "./data/studentShowcase.data";
 import { testimonialsData } from "./data/testimonials.data";
 import { tweetLoveData } from "./data/tweetLove.data";
+import { udemyCourses } from "./data/udemyCourses.data";
 
 function App() {
   const { logoImage, navbarItems, loginBtnText, loginButtonLink } = headerData;
@@ -47,6 +49,12 @@ function App() {
         btnText={testimonialsData.button.btnText}
         btnLink={testimonialsData.button.btnLink}
         btnTarget={testimonialsData.button.btnTarget}
+      />
+      <Divider />
+      <CoursesSection
+        heading={udemyCourses.heading}
+        subHeading={udemyCourses.subheading}
+        courses={udemyCourses.courses}
       />
     </section>
   );

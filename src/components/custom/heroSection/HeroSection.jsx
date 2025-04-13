@@ -38,10 +38,9 @@ export const HeroSection = () => {
             <iframe
               src="https://www.youtube.com/embed/QIFhevCENrU?si=tcJ1ZkUGU0FSQKUN&amp;controls=0"
               title="YouTube video player"
-              frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
               className="rounded-xl shadow-xl w-full h-[240px] md:h-[400px]"
             ></iframe>
         </BackgroundGradient>

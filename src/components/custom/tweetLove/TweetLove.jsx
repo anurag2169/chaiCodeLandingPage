@@ -46,15 +46,16 @@ export const TweetLove = ({ heading, subheading, tweets = [], cta }) => {
       <div className="mx-6 md:mx-0 flex flex-col md:flex-row gap-6 py-5 md:py-8 flex-wrap justify-center">
         {tweets &&
           tweets.map(
-            ({ tweetText, profileImage, name, handle, verified, index }) => (
-              <TwitterCard
-                key={index}
-                name={name}
-                tweetText={tweetText}
-                profileImage={profileImage}
-                handle={handle}
-                verified={verified}
-              />
+            ({ tweetText, profileImage, name, handle, verified }, index) => (
+              <div key={index}>
+                <TwitterCard
+                  name={name}
+                  tweetText={tweetText}
+                  profileImage={profileImage}
+                  handle={handle}
+                  verified={verified}
+                />
+              </div>
             )
           )}
       </div>

@@ -1,0 +1,25 @@
+import React from "react";
+import { UdemyCarousel } from "../carousel/UdemyCarousel";
+
+export const CoursesSection = ({
+  heading = "Udemy",
+  subHeading = "Not only in India, we are global leaders in tech education",
+  courses,
+}) => {
+  return (
+    <section className="w-full flex items-center flex-col gap-4 md:gap-8 pb-10">
+      <div className="text-center">
+        <h2 className="text-3xl md:text-5xl font-bold mb-1">
+          <span className="bg-gradient-to-r from-orange-300 to-amber-600 text-transparent bg-clip-text">
+            {heading}
+          </span>
+        </h2>
+        <p className="text-sm md:text-md font-thin">{subHeading}</p>
+      </div>
+
+      <div className="w-[90%] lg:w-[80%]">
+        <UdemyCarousel udemyCourses={courses} />
+      </div>
+    </section>
+  );
+};
