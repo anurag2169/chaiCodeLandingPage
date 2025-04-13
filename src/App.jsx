@@ -9,7 +9,7 @@ import { TweetLove } from "./components/custom/tweetLove/TweetLove";
 import { cohortsData } from "./data/cohorts.data";
 import { headerData } from "./data/header.data";
 import { studentShowcaseData } from "./data/studentShowcase.data";
-import { testimonials } from "./data/testimonials.data";
+import { testimonialsData } from "./data/testimonials.data";
 import { tweetLoveData } from "./data/tweetLove.data";
 
 function App() {
@@ -39,7 +39,15 @@ function App() {
         liveCohorts={cohortsData.cohorts}
       />
       <Divider />
-      <Testimonials testimonials={testimonials} />
+      <Testimonials
+        testimonials={testimonialsData.testimonials}
+        title={testimonialsData.title}
+        heading={testimonialsData.heading}
+        subHeading={testimonialsData.subHeading}
+        btnText={testimonialsData.button.btnText}
+        btnLink={testimonialsData.button.btnLink}
+        btnTarget={testimonialsData.button.btnTarget}
+      />
     </section>
   );
 }

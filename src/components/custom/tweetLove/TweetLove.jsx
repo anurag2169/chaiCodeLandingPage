@@ -25,19 +25,20 @@ export const TweetLove = ({ heading, subheading, tweets = [], cta }) => {
             }}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
-            {/* Love that we get from our community */}
             {subheading}
           </motion.span>
 
           <motion.h2
-            className="text-4xl lg:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-white to-orange-300 py-2"
+            className="text-4xl lg:text-5xl font-bold "
             variants={{
               hidden: { opacity: 0, y: 30 },
               visible: { opacity: 1, y: 0 },
             }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            {heading}
+            <span className="bg-gradient-to-r from-orange-300 to-amber-600 text-transparent bg-clip-text">
+              {heading}
+            </span>
           </motion.h2>
         </motion.div>
       </div>
@@ -59,7 +60,7 @@ export const TweetLove = ({ heading, subheading, tweets = [], cta }) => {
       </div>
       <div>
         <a href={cta.link} target={cta.target} rel="noopener noreferrer">
-          <Button className="py-5 cursor-pointer bg-orange-600 border w-52 h-14 rounded-full transition-transform duration-300 hover:scale-110">
+          <Button className="py-5 cursor-pointer bg-primary border w-52 h-14 rounded-full transition-transform duration-300 hover:scale-110">
             {cta.text}
           </Button>
         </a>

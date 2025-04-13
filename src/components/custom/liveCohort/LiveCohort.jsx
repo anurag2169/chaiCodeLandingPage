@@ -13,7 +13,7 @@ export const LiveCohort = ({ heading, subHeading, liveCohorts }) => {
         <h4 className="font-thin text-xl my-2">{subHeading}</h4>
         <div className="border-2 mt-1 w-24 m-auto border-orange-400 rounded-full" />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12 mx-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-4 md:mx-12">
         {liveCohorts &&
           liveCohorts.map((cohort, index) => (
             <div key={index}>

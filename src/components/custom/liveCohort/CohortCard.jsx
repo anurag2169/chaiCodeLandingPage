@@ -28,16 +28,20 @@ export const CohortCard = ({
             className="w-full h-full rounded-t-xl"
           ></iframe>
         </div>
-        <div className="absolute bottom-2 mx-4 flex gap-2">
+        <div className="absolute bottom-2 mx-4 flex gap-2 text-nowrap ">
           {tags &&
-            tags.map((tag, index) => (
+            tags.slice(0, 3).map((tag, index) => (
               <div
                 key={index}
-                className="border rounded-md  border-orange-400 bg-black/75 p-1 px-2 text-xs"
+                className="border rounded-md  border-orange-400 bg-black/75 p-1 px-2 text-xs shadow z-50"
               >
                 {tag}
               </div>
             ))}
+
+          <div className="border rounded-md  border-orange-400 bg-black/75 p-1 px-2 text-xs">
+            + {tags.length - 3}
+          </div>
         </div>
       </div>
       <section className="p-5 flex flex-col">
