@@ -8,6 +8,7 @@ import { Navbar } from "./components/custom/nabvar/Navbar.component";
 import { Showcase } from "./components/custom/showcaseSection/showcase";
 import { Testimonials } from "./components/custom/testimonials/Testimonials";
 import { TweetLove } from "./components/custom/tweetLove/TweetLove";
+import { cohortBenefits } from "./data/cohortBenefits.data";
 import { cohortsData } from "./data/cohorts.data";
 import { headerData } from "./data/header.data";
 import { studentShowcaseData } from "./data/studentShowcase.data";
@@ -58,7 +59,10 @@ function App() {
         courses={udemyCourses.courses}
       />
       <Divider />
-      <Benefits />
+      <Benefits
+        {...cohortBenefits}
+        alumniNetwork={cohortBenefits.alumniNetwork}
+      />
     </section>
   );
 }
