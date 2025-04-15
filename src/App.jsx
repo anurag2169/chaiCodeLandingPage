@@ -1,4 +1,5 @@
 import "./App.css";
+import { Benefits } from "./components/custom/BenefitsSection/Benefits";
 import { CoursesSection } from "./components/custom/coursesSection/CoursesSection";
 import { Divider } from "./components/custom/divider/Divider";
 import { HeroSection } from "./components/custom/heroSection/heroSection";
@@ -56,6 +57,8 @@ function App() {
         subHeading={udemyCourses.subheading}
         courses={udemyCourses.courses}
       />
+      <Divider />
+      <Benefits />
     </section>
   );
 }
