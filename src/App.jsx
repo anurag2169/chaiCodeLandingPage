@@ -6,6 +6,7 @@ import { HeroSection } from "./components/custom/heroSection/heroSection";
 import { LiveCohort } from "./components/custom/liveCohort/LiveCohort";
 import { Navbar } from "./components/custom/nabvar/Navbar.component";
 import { Showcase } from "./components/custom/showcaseSection/showcase";
+import { TagSection } from "./components/custom/tagSection/TagSection";
 import { Testimonials } from "./components/custom/testimonials/Testimonials";
 import { TweetLove } from "./components/custom/tweetLove/TweetLove";
 import { cohortBenefits } from "./data/cohortBenefits.data";
@@ -13,6 +14,7 @@ import { cohortsData } from "./data/cohorts.data";
 import { headerData } from "./data/header.data";
 import { studentShowcaseData } from "./data/studentShowcase.data";
 import { testimonialsData } from "./data/testimonials.data";
+import { topicsCloudTagSection } from "./data/topicsCloudTagSection.data";
 import { tweetLoveData } from "./data/tweetLove.data";
 import { udemyCourses } from "./data/udemyCourses.data";
 
@@ -62,6 +64,12 @@ function App() {
       <Benefits
         {...cohortBenefits}
         alumniNetwork={cohortBenefits.alumniNetwork}
+      />
+      <Divider />
+      <TagSection
+        heading={topicsCloudTagSection.heading}
+        subHeading={topicsCloudTagSection.subheading}
+        tags={topicsCloudTagSection.tags}
       />
     </section>
   );
