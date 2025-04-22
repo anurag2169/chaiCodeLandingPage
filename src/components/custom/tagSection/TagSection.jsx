@@ -7,7 +7,7 @@ export const TagSection = ({
   tags,
 }) => {
   return (
-    <section className="w-full flex items-center justify-center flex-col gap-4 md:gap-12 pb-10 overflow-hidden">
+    <section className="w-full flex items-center justify-center flex-col gap-4 md:gap-12 overflow-hidden">
       <div className="text-center">
         <h2 className="text-3xl md:text-5xl font-bold mb-2">
           <span className="bg-gradient-to-r from-orange-300 to-amber-600 text-transparent bg-clip-text">

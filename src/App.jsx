@@ -1,5 +1,6 @@
 import "./App.css";
 import { Benefits } from "./components/custom/BenefitsSection/Benefits";
+import { Community } from "./components/custom/communitySection/Community";
 import { CoursesSection } from "./components/custom/coursesSection/CoursesSection";
 import { Divider } from "./components/custom/divider/Divider";
 import { HeroSection } from "./components/custom/heroSection/heroSection";
@@ -71,6 +72,9 @@ function App() {
         subHeading={topicsCloudTagSection.subheading}
         tags={topicsCloudTagSection.tags}
       />
+      {/* <Divider /> */}
+      <Community />
+      {/* <Divider /> */}
     </section>
   );
 }
