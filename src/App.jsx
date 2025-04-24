@@ -12,6 +12,7 @@ import { Testimonials } from "./components/custom/testimonials/Testimonials";
 import { TweetLove } from "./components/custom/tweetLove/TweetLove";
 import { cohortBenefits } from "./data/cohortBenefits.data";
 import { cohortsData } from "./data/cohorts.data";
+import { communitySection } from "./data/communitySection.data";
 import { headerData } from "./data/header.data";
 import { studentShowcaseData } from "./data/studentShowcase.data";
 import { testimonialsData } from "./data/testimonials.data";
@@ -73,7 +74,7 @@ function App() {
         tags={topicsCloudTagSection.tags}
       />
       {/* <Divider /> */}
-      <Community />
+      <Community {...communitySection} />
       {/* <Divider /> */}
     </section>
   );
