@@ -3,6 +3,7 @@ import { Benefits } from "./components/custom/BenefitsSection/Benefits";
 import { Community } from "./components/custom/communitySection/Community";
 import { CoursesSection } from "./components/custom/coursesSection/CoursesSection";
 import { Divider } from "./components/custom/divider/Divider";
+import { FreeApiSection } from "./components/custom/freeapiSection/FreeApiSection";
 import { HeroSection } from "./components/custom/heroSection/heroSection";
 import { LiveCohort } from "./components/custom/liveCohort/LiveCohort";
 import { Navbar } from "./components/custom/nabvar/Navbar.component";
@@ -14,6 +15,7 @@ import { cohortBenefits } from "./data/cohortBenefits.data";
 import { cohortsData } from "./data/cohorts.data";
 import { communitySection } from "./data/communitySection.data";
 import { headerData } from "./data/header.data";
+import { openSourceProject } from "./data/openSourceProject.data";
 import { studentShowcaseData } from "./data/studentShowcase.data";
 import { testimonialsData } from "./data/testimonials.data";
 import { topicsCloudTagSection } from "./data/topicsCloudTagSection.data";
@@ -73,9 +75,9 @@ function App() {
         subHeading={topicsCloudTagSection.subheading}
         tags={topicsCloudTagSection.tags}
       />
-      {/* <Divider /> */}
       <Community {...communitySection} />
-      {/* <Divider /> */}
+      <FreeApiSection {...openSourceProject} />
+      <Divider />
     </section>
   );
 }
