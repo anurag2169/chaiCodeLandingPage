@@ -3,6 +3,7 @@ import { Benefits } from "./components/custom/BenefitsSection/Benefits";
 import { Community } from "./components/custom/communitySection/Community";
 import { CoursesSection } from "./components/custom/coursesSection/CoursesSection";
 import { Divider } from "./components/custom/divider/Divider";
+import { Footer } from "./components/custom/footer/Footer";
 import { FreeApiSection } from "./components/custom/freeapiSection/FreeApiSection";
 import { HeroSection } from "./components/custom/heroSection/heroSection";
 import { LiveCohort } from "./components/custom/liveCohort/LiveCohort";
@@ -14,6 +15,7 @@ import { TweetLove } from "./components/custom/tweetLove/TweetLove";
 import { cohortBenefits } from "./data/cohortBenefits.data";
 import { cohortsData } from "./data/cohorts.data";
 import { communitySection } from "./data/communitySection.data";
+import { footerData } from "./data/footer.data";
 import { headerData } from "./data/header.data";
 import { openSourceProject } from "./data/openSourceProject.data";
 import { studentShowcaseData } from "./data/studentShowcase.data";
@@ -78,6 +80,11 @@ function App() {
       <Community {...communitySection} />
       <FreeApiSection {...openSourceProject} />
       <Divider />
+      <Footer
+        {...footerData}
+        socialIcons={footerData.socialIcons}
+        links={footerData.links}
+      />
     </section>
   );
 }
