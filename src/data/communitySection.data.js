@@ -1,7 +1,7 @@
 export const communitySection = {
   tag: "Community",
   heading: "Join our community where creativity thrives",
-  image: "https://hiteshchoudhary.b-cdn.net/coding-hero-v2/hc-laptop.png",
+  image: "/students-2.jpg",
   activeMembersText: "80,000 Active coders in Discord",
   peoples: [
     {

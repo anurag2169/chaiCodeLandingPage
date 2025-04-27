@@ -87,7 +87,9 @@ function App() {
         subHeading={topicsCloudTagSection.subheading}
         tags={topicsCloudTagSection.tags}
       />
+      <Divider />
       <Community {...communitySection} />
+      <Divider />
       <FreeApiSection {...openSourceProject} />
       <Divider />
       <Footer
