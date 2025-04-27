@@ -19,6 +19,7 @@ import { cohortsData } from "./data/cohorts.data";
 import { communitySection } from "./data/communitySection.data";
 import { footerData } from "./data/footer.data";
 import { headerData } from "./data/header.data";
+import { heroSectionData } from "./data/heroSection.data";
 import { openSourceProject } from "./data/openSourceProject.data";
 import { studentShowcaseData } from "./data/studentShowcase.data";
 import { testimonialsData } from "./data/testimonials.data";
@@ -38,7 +39,7 @@ function App() {
         buttonText={loginBtnText}
         buttonLink={loginButtonLink}
       />
-      <HeroSection />
+      <HeroSection {...heroSectionData} />
       <TweetLove
         heading={heading}
         subheading={subheading}
