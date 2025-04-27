@@ -6,10 +6,10 @@ import { CoursesSection } from "./components/custom/coursesSection/CoursesSectio
 import { Divider } from "./components/custom/divider/Divider";
 import { Footer } from "./components/custom/footer/Footer";
 import { FreeApiSection } from "./components/custom/freeapiSection/FreeApiSection";
-import { HeroSection } from "./components/custom/heroSection/heroSection";
+import { HeroSection } from "./components/custom/heroSection/HeroSection";
 import { LiveCohort } from "./components/custom/liveCohort/LiveCohort";
 import { Navbar } from "./components/custom/nabvar/Navbar.component";
-import { Showcase } from "./components/custom/showcaseSection/showcase";
+import { Showcase } from "./components/custom/showcaseSection/Showcase";
 import { TagSection } from "./components/custom/tagSection/TagSection";
 import { Testimonials } from "./components/custom/testimonials/Testimonials";
 import { TweetLove } from "./components/custom/tweetLove/TweetLove";
