@@ -1,4 +1,4 @@
-import React from "react";
+import { motion } from "framer-motion";
 
 export const Footer = ({
   chaiLogo,
@@ -9,7 +9,17 @@ export const Footer = ({
   title,
 }) => {
   return (
-    <section className="w-full">
+    <section className="w-full relative overflow-hidden">
+      <motion.div
+        className="absolute bottom-0 left-0 w-full h-36 md:h-[160px] bg-gradient-to-t from-primary/12 via-primary/7 to-transparent blur-3xl"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 1.2,
+          ease: "easeInOut",
+        }}
+      />
+
       <div className="flex flex-col md:flex-row justify-center items-center md:justify-between gap-10 md:mx-10">
         <div className="flex flex-col gap-3 items-center md:items-start">
           <div className="w-36 inline-flex items-center">
@@ -45,11 +55,19 @@ export const Footer = ({
           ))}
         </div>
       </div>
-      <div className="my-10 text-[4rem] sm:text-[6rem] md:text-[8rem] lg:text-[12rem] font-bold text-center tracking-tighter leading-none w-full mx-auto">
+      <motion.div
+        className="z-50 my-10 text-[4rem] sm:text-[6rem] md:text-[8rem] lg:text-[12rem] font-bold text-center tracking-tighter leading-none w-full mx-auto"
+        initial={{ opacity: 0, y: -60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.8,
+          ease: "easeOut",
+        }}
+      >
         <span className="bg-gradient-to-b from-orange-300 to-primary text-transparent bg-clip-text">
           {title}
         </span>
-      </div>
+      </motion.div>
     </section>
   );
 };

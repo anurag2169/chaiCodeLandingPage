@@ -1,17 +1,36 @@
 import React from "react";
 import { FeatureGrid } from "./FeatureGrid";
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 
 export const ChaiCodeFeature = ({ heading, subheading, items, cta }) => {
   return (
     <section className="w-full flex flex-col justify-center items-center">
       <div className="text-center">
-        <h2 className="text-3xl md:text-5xl font-bold mb-1">
+        <motion.h2
+          className="text-3xl md:text-5xl font-bold mb-1"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.6,
+            ease: "easeOut",
+          }}
+        >
           <span className="bg-gradient-to-r from-orange-300 to-amber-600 text-transparent bg-clip-text">
             {heading}
           </span>
-        </h2>
-        <p className="text-sm md:text-md font-thin pt-1">{subheading}</p>
+        </motion.h2>
+        <motion.p
+          className="text-sm md:text-md font-thin pt-1"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.6,
+            ease: "easeOut",
+          }}
+        >
+          {subheading}
+        </motion.p>
       </div>
 
       <div className="py-10">

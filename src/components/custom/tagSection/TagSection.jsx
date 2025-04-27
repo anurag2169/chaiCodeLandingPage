@@ -1,5 +1,6 @@
 import { InfiniteMovingTags } from "@/components/ui/infinite-moving-tags";
 import React from "react";
+import { motion } from "framer-motion";
 
 export const TagSection = ({
   heading = "Topics Cloud",
@@ -9,12 +10,30 @@ export const TagSection = ({
   return (
     <section className="w-full flex items-center justify-center flex-col gap-4 md:gap-12 overflow-hidden">
       <div className="text-center">
-        <h2 className="text-3xl md:text-5xl font-bold mb-2">
+        <motion.h2
+          className="text-3xl md:text-5xl font-bold mb-2"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.6,
+            ease: "easeOut",
+          }}
+        >
           <span className="bg-gradient-to-r from-orange-300 to-amber-600 text-transparent bg-clip-text">
             {heading}
           </span>
-        </h2>
-        <p className="text-sm md:text-md font-thin">{subHeading}</p>
+        </motion.h2>
+        <motion.p
+          className="text-sm md:text-md font-thin"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.6,
+            ease: "easeOut",
+          }}
+        >
+          {subHeading}
+        </motion.p>
       </div>
 
       <div className="">

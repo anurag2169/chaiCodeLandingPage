@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 import React from "react";
 
 export const FreeApiSection = ({
@@ -12,11 +13,19 @@ export const FreeApiSection = ({
 }) => {
   return (
     <section className="w-[95%] mx-auto md:w-[80%] md:mx-auto flex items-center justify-center flex-col gap-4 md:gap-10">
-      <h2 className="text-4xl lg:text-6xl font-bold mb-2 text-center md:text-left">
+      <motion.h2
+        className="text-4xl lg:text-6xl font-bold mb-2 text-center md:text-left"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.6,
+          ease: "easeOut",
+        }}
+      >
         <span className="bg-gradient-to-r from-orange-300 to-amber-600 text-transparent bg-clip-text">
           {title}
         </span>
-      </h2>
+      </motion.h2>
       <div className="flex items-center justify-center md:flex-row flex-col gap-10 md:gap-20">
         <div className="flex items-center md:items-start flex-col ">
           <h2 className="w-[80%] text-3xl lg:text-5xl font-bold mb-2 text-center md:text-left">

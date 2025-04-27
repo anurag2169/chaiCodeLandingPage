@@ -1,4 +1,6 @@
 import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
+import { BackgroundGradient } from "@/components/ui/background-gradient";
+import { motion } from "framer-motion";
 import React from "react";
 
 export const Community = ({
@@ -7,6 +9,7 @@ export const Community = ({
   activeMembersText,
   image,
   peoples,
+  discordLink,
 }) => {
   return (
     <section className="w-[95%] mx-auto md:w-[80%] md:mx-auto">
@@ -21,21 +24,34 @@ export const Community = ({
             </span>
           </h2>
 
-          <div className="rounded-2xl">
-            <img
-              src={image}
-              alt={tag}
-              className="object-contain w-full rounded-2xl"
-            />
-          </div>
+          <motion.div
+            className="rounded-2xl"
+            animate={{ scale: [1, 1.03, 1] }}
+            transition={{
+              duration: 2,
+              repeat: Infinity,
+              repeatType: "loop",
+              ease: "easeInOut",
+            }}
+          >
+            <BackgroundGradient className="rounded-[22px] p-2 lg:p-2 bg-white dark:bg-zinc-900">
+              <img
+                src={image}
+                alt={tag}
+                className="object-cover w-full rounded-2xl"
+              />
+            </BackgroundGradient>
+          </motion.div>
         </div>
         <div className="text-center">
           <div className="flex flex-row items-center justify-center w-full">
             <AnimatedTooltip items={peoples} />
           </div>
-          <div className="ml-3 mt-2 text-gray-400 text-md font-semibold tracking-wide">
-            {activeMembersText}
-          </div>
+          <a href={discordLink} target="_blank">
+            <div className="ml-3 mt-2 text-gray-400 hover:text-gray-500 text-md font-semibold tracking-wide hover:underline cursor-pointer">
+              {activeMembersText}
+            </div>
+          </a>
         </div>
       </main>
     </section>

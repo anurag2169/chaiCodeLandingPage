@@ -1,6 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { EllipsisIcon, HammerIcon, Menu } from "lucide-react";
-import React from "react";
 
 export const Navbar = ({
   logoImage,
@@ -16,10 +14,6 @@ export const Navbar = ({
         </a>
       </div>
       <nav className="md:w-[30%]">
-        <div className="sm:hidden">
-          <Menu />
-        </div>
-
         <ul className="hidden sm:flex justify-between gap-5">
           {navbarItems.map((item, index) => (
             <li key={index}>
@@ -43,7 +37,7 @@ export const Navbar = ({
           ))}
         </ul>
       </nav>
-      <div className="hidden md:block ">
+      <div>
         <Button
           variant="secondary"
           size="lg"

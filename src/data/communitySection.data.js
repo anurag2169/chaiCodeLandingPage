@@ -3,6 +3,7 @@ export const communitySection = {
   heading: "Join our community where creativity thrives",
   image: "/students-2.jpg",
   activeMembersText: "80,000 Active coders in Discord",
+  discordLink:"/",
   peoples: [
     {
       id: 1,
