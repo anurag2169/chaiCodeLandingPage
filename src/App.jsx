@@ -1,5 +1,6 @@
 import "./App.css";
 import { Benefits } from "./components/custom/BenefitsSection/Benefits";
+import { ChaiCodeFeature } from "./components/custom/chaiCodeFeature/ChaiCodeFeature";
 import { Community } from "./components/custom/communitySection/Community";
 import { CoursesSection } from "./components/custom/coursesSection/CoursesSection";
 import { Divider } from "./components/custom/divider/Divider";
@@ -12,6 +13,7 @@ import { Showcase } from "./components/custom/showcaseSection/showcase";
 import { TagSection } from "./components/custom/tagSection/TagSection";
 import { Testimonials } from "./components/custom/testimonials/Testimonials";
 import { TweetLove } from "./components/custom/tweetLove/TweetLove";
+import { chaiCodeFeatureSection } from "./data/chaiCodeFeature.data";
 import { cohortBenefits } from "./data/cohortBenefits.data";
 import { cohortsData } from "./data/cohorts.data";
 import { communitySection } from "./data/communitySection.data";
@@ -70,6 +72,14 @@ function App() {
       <Benefits
         {...cohortBenefits}
         alumniNetwork={cohortBenefits.alumniNetwork}
+      />
+      <Divider />
+
+      <ChaiCodeFeature
+        heading={chaiCodeFeatureSection.heading}
+        subheading={chaiCodeFeatureSection.subheading}
+        items={chaiCodeFeatureSection.items}
+        cta={chaiCodeFeatureSection.cta}
       />
       <Divider />
       <TagSection
