@@ -5,7 +5,7 @@ export const footerData = {
   title: "CHAICODE",
   socialIcons: [
     {
-      href: "https://youtube.com",
+      href: "https://www.youtube.com/@chaiaurcode",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +25,7 @@ export const footerData = {
       ),
     },
     {
-      href: "https://twitter.com",
+      href: "https://x.com/hiteshdotcom",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +44,7 @@ export const footerData = {
       ),
     },
     {
-      href: "https://instagram.com",
+      href: "https://www.instagram.com/hiteshchoudharyofficial/?hl=en",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +65,7 @@ export const footerData = {
       ),
     },
     {
-      href: "https://instagram.com",
+      href: "https://www.linkedin.com/in/hiteshchoudhary",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -86,7 +86,7 @@ export const footerData = {
       ),
     },
     {
-      href: "https://instagram.com",
+      href: "https://github.com/hiteshchoudhary",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -106,7 +106,7 @@ export const footerData = {
       ),
     },
     {
-      href: "https://discord.com",
+      href: "https://hitesh.ai/discord",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -126,15 +126,30 @@ export const footerData = {
     },
   ],
   links: [
-    { href: "/", label: "Courses" },
-    { href: "/", label: "Cohort" },
-    { href: "/", label: "Coding Hero" },
-    { href: "/", label: "Free Api" },
-    { href: "/", label: "Masterji" },
-    { href: "/", label: "Docs" },
-    { href: "/", label: "Privacy Policy" },
-    { href: "/", label: "Terms of Services" },
-    { href: "/", label: "Pricing Policy" },
-    { href: "/", label: "Refund Policy" },
+    { href: "https://courses.chaicode.com/learn", label: "Courses" },
+    {
+      href: "https://courses.chaicode.com/learn/view-all?show=batch&type=17",
+      label: "Cohort",
+    },
+    {
+      href: "https://courses.chaicode.com/learn/batch/about?bundleId=226894",
+      label: "Coding Hero",
+    },
+    { href: "https://freeapi.app/", label: "Free Api" },
+    { href: "https://masterji.co/login", label: "Masterji" },
+    { href: "https://docs.chaicode.com/", label: "Docs" },
+    {
+      href: "https://www.chaicode.com/privacy-policy",
+      label: "Privacy Policy",
+    },
+    {
+      href: "https://www.chaicode.com/terms-of-services",
+      label: "Terms of Services",
+    },
+    {
+      href: "https://www.chaicode.com/pricing-policy",
+      label: "Pricing Policy",
+    },
+    { href: "https://www.chaicode.com/refund-policy", label: "Refund Policy" },
   ],
 };

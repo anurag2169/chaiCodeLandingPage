@@ -15,7 +15,8 @@ export function FeatureGrid({ items }) {
             icon={item.icon}
             className={cn(
               `${isCenterCard ? "col-span-1 row-span-3" : ""}`,
-              item.className
+              item.className, " cursor-pointer"
+              
             )}
           />
         );
