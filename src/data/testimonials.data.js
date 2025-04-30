@@ -12,32 +12,51 @@ export const testimonialsData = {
   testimonials: [
     {
       quote:
-        "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-      name: "Charles Dickens",
-      title: "A Tale of Two Cities",
+        "Joining the Full Stack Web Development Cohort by Hitesh Choudhary was a game-changer. The structured curriculum and hands-on projects, like building a BMI calculator, solidified my understanding of JavaScript and DOM manipulation.",
+      name: "Akhil Tiwari",
+      title: "Computer Science Student & Aspiring Full Stack Developer",
     },
     {
       quote:
-        "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-      name: "William Shakespeare",
-      title: "Hamlet",
-    },
-    {
-      quote: "All that we see or seem is but a dream within a dream.",
-      name: "Edgar Allan Poe",
-      title: "A Dream Within a Dream",
+        "Hitesh Sir's backend series instilled confidence in me as a fresher. The in-depth explanations and real-world applications helped me grasp complex concepts with ease.",
+      name: "Sambit Kumar",
+      title: "Junior Developer",
     },
     {
       quote:
-        "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-      name: "Jane Austen",
-      title: "Pride and Prejudice",
+        "The Chai aur Code platform offers a unique blend of peer code reviews, coding hostels, and bounties. This community-driven approach kept me motivated and enhanced my learning experience.",
+      name: "Piyush",
+      title: "Software Development Intern",
     },
     {
       quote:
-        "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-      name: "Herman Melville",
-      title: "Moby-Dick",
+        "Participating in the ChaiCode cohort was transformative. The Leet Lab and revision classes provided continuous learning opportunities, making complex topics more approachable.",
+      name: "Riya Sharma",
+      title: "Final Year B.Tech Student & Frontend Developer Intern",
+    },
+    {
+      quote:
+        "The Chai aur React series on YouTube is a treasure trove for React enthusiasts. Hitesh Sir's teaching style makes advanced topics like Redux Toolkit and Zustand state management accessible to all.",
+      name: "Ankit Verma",
+      title: "React Developer",
+    },
+    {
+      quote:
+        "The 30-Day JavaScript Challenge by Hitesh Choudhary transformed my coding skills. The structured approach, community support, and hands-on projects were instrumental in my learning journey.",
+      name: "Ajay",
+      title: "Aspiring JavaScript Developer",
+    },
+    {
+      quote:
+        "Learning React from Hitesh Choudhary's Chai aur Code series was enlightening. The practical examples and projects enhanced my understanding significantly.",
+      name: "Sourabh",
+      title: "React Developer Intern",
+    },
+    {
+      quote:
+        "The JavaScript series on Chai aur Code provided me with a solid foundation. The clear explanations and real-world examples made learning enjoyable.",
+      name: "Anurag Dubey",
+      title: "JavaScript Enthusiast & Developer",
     },
   ],
 };

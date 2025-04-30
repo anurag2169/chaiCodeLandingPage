@@ -50,4 +50,9 @@ export const tweetLoveData = {
     link: "/cohorts",
     target: "_blank",
   },
+  tweetId: [
+    "1917222531661955406",
+    "1916551318828699811",
+    "1909311534071005350",
+  ],
 };

@@ -2,32 +2,21 @@ import { Button } from "@/components/ui/button";
 import React from "react";
 import { motion } from "framer-motion";
 import { TwitterCard } from "../twitterCard/TwitterCard";
+import { Tweet } from "react-tweet";
 
-export const TweetLove = ({ heading, subheading, tweets = [], cta }) => {
+export const TweetLove = ({ heading, subheading, cta, tweetId }) => {
   return (
     <section className="w-full bg-gray-950 flex flex-col justify-center items-center gap-4 py-8">
       <div className="text-center">
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true }}
           transition={{ staggerChildren: 0.15 }}
           variants={{
             hidden: {},
             visible: {},
           }}
         >
-          <motion.span
-            className="text-md font-thin block tracking-wide"
-            variants={{
-              hidden: { opacity: 0, y: 30 },
-              visible: { opacity: 1, y: 0 },
-            }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-          >
-            {subheading}
-          </motion.span>
-
           <motion.h2
             className="text-4xl lg:text-5xl font-bold "
             variants={{
@@ -40,24 +29,25 @@ export const TweetLove = ({ heading, subheading, tweets = [], cta }) => {
               {heading}
             </span>
           </motion.h2>
+          <motion.span
+            className="text-md font-thin block tracking-wide"
+            variants={{
+              hidden: { opacity: 0, y: 30 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
+            {subheading}
+          </motion.span>
         </motion.div>
       </div>
 
-      <div className="mx-6 md:mx-0 flex flex-col md:flex-row gap-6 py-5 md:py-8 flex-wrap justify-center">
-        {tweets &&
-          tweets.map(
-            ({ tweetText, profileImage, name, handle, verified }, index) => (
-              <div key={index}>
-                <TwitterCard
-                  name={name}
-                  tweetText={tweetText}
-                  profileImage={profileImage}
-                  handle={handle}
-                  verified={verified}
-                />
-              </div>
-            )
-          )}
+      <div className="mx-6 md:mx-0 flex flex-col md:flex-row gap-6 py-5 md:py-8 flex-wrap justify-center items-center">
+        {tweetId.map((id) => (
+          <div key={id} className="md:w-[30%]">
+            <Tweet id={id} />
+          </div>
+        ))}
       </div>
       <div>
         <a href={cta.link} target={cta.target} rel="noopener noreferrer">

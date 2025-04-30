@@ -29,7 +29,7 @@ import { udemyCourses } from "./data/udemyCourses.data";
 
 function App() {
   const { logoImage, navbarItems, loginBtnText, loginButtonLink } = headerData;
-  const { heading, subheading, tweets, cta } = tweetLoveData;
+  const { heading, subheading, tweetId, cta } = tweetLoveData;
   const { title, logos } = studentShowcaseData;
   return (
     <section className="">
@@ -43,8 +43,8 @@ function App() {
       <TweetLove
         heading={heading}
         subheading={subheading}
-        tweets={tweets}
         cta={cta}
+        tweetId={tweetId}
       />
       <Showcase title={title} logos={logos} />
       <Divider />
