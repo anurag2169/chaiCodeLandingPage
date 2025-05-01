@@ -47,7 +47,7 @@ export const tweetLoveData = {
   ],
   cta: {
     text: "Join Cohorts Live Classes",
-    link: "/cohorts",
+    link: "https://courses.chaicode.com/learn/view-all?show=batch&type=17",
     target: "_blank",
   },
   tweetId: [

@@ -1,3 +1,4 @@
+import React, { Suspense } from "react";
 import "./App.css";
 import { Benefits } from "./components/custom/BenefitsSection/Benefits";
 import { ChaiCodeFeature } from "./components/custom/chaiCodeFeature/ChaiCodeFeature";

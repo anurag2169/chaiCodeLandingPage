@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export const LiveCohort = ({ heading, subHeading, liveCohorts }) => {
   return (
-    <section className="w-full flex flex-col items-center justify-center gap-10">
+    <section id="cohorts" className="w-full flex flex-col items-center justify-center gap-10">
       <div className="text-center">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}

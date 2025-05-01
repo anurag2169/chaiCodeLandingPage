@@ -1,12 +1,47 @@
-# React + Vite
+# ChaiCode Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Created by Anurag Dubey**
 
-Currently, two official plugins are available:
+Welcome to the ChaiCode Landing Page repository!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Site
 
-## Expanding the ESLint configuration
+Visit the live landing page here: [https://chaiaurcode-anurag.vercel.app/](https://chaiaurcode-anurag.vercel.app/)
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📦 Tech Stack
+
+The landing page is built using modern web technologies to ensure responsiveness and performance:
+
+- **Frontend**: HTML, CSS, Tailwind CSS, JavaScript, React
+- **Deployment**: Vercel
+
+## 🛠️ Getting Started
+
+To set up the project locally:
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/anurag2169/chaiCodeLandingPage.git
+   ```
+
+2. **Install dependencies**:
+
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**:
+   ```bash
+   npm run dev
+   ```
+
+The application will be available at `http://localhost:5173`.
+
+## 🤝 Contributing
+
+We welcome contributions from the community! Please fork the repository and submit a pull request for any enhancements or bug fixes.
+
+## 📬 Contact
+
+For any inquiries or support, please reach out to us at anuragd2169@gmail.com

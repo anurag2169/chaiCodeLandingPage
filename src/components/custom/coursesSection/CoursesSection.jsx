@@ -7,7 +7,7 @@ export const CoursesSection = ({
   courses,
 }) => {
   return (
-    <section className="w-full flex items-center flex-col gap-4 md:gap-8 pb-10">
+    <section id="udemy" className="w-full flex items-center flex-col gap-4 md:gap-8 pb-10">
       <div className="text-center">
         <motion.h2
           className="text-3xl md:text-5xl font-bold mb-1"

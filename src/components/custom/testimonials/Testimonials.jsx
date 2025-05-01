@@ -13,7 +13,10 @@ export const Testimonials = ({
   testimonials,
 }) => {
   return (
-    <section className="flex items-center flex-col gap-4 md:gap-8 pb-10">
+    <section
+      id="review"
+      className="flex items-center flex-col gap-4 md:gap-8 pb-10"
+    >
       <div className="border border-orange-300 p-2 md:p-4 rounded-full w-54 text-center font-bold text-xl tracking-wide shadow shadow-orange-500/75">
         {title}
       </div>

@@ -5,7 +5,7 @@ export const testimonialsData = {
     "Explore the incredible advantages of enrolling in our courses and enhancing your skills.",
   button: {
     btnText: "Join Cohorts Live Classes",
-    btnLink: "/cohorts",
+    btnLink: "https://courses.chaicode.com/learn/view-all?show=batch&type=17",
     btnTarget: "_blank",
   },
 
